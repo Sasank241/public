@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Donation Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍲 Food Donation Management System</h1>
+    <nav>
+      <button onclick="showSection('donorForm')">Donor</button>
+      <button onclick="showSection('receiverSection')">Receiver</button>
+    </nav>
+  </header>
+
+  <!-- Donor Form -->
+  <section id="donorForm" class="visible">
+    <h2>Donor Registration & Food Posting</h2>
+    <form id="foodForm">
+      <label>Donor Name:</label>
+      <input type="text" id="donorName" required>
+
+      <label>Contact Info:</label>
+      <input type="text" id="contact" required>
+
+      <label>Food Description:</label>
+      <textarea id="foodDesc" required></textarea>
+
+      <label>Pickup Location:</label>
+      <input type="text" id="location" required>
+
+      <button type="submit">Post Donation</button>
+    </form>
+  </section>
+
+  <!-- Receiver Section -->
+  <section id="receiverSection">
+    <h2>Available Food Donations</h2>
+    <div id="foodList" class="card-container"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Food Donation Management System | Made with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
